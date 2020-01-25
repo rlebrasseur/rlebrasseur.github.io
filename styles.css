@@ -81,6 +81,10 @@ nav li {
 }
 .about-me p {
   color: #C0C0C0;
+  text-indent: 2em;
+}
+.about-me p:first-of-type {
+  text-indent: 0;
 }
 .goals-container {
   background-color: #202020;
@@ -89,7 +93,7 @@ nav li {
 .goals {
   position: relative;
   top: -1em;
-  padding: 0% 5% 0% 15%;
+  padding: 0% 5% 0% 10%;
   width: 95vw;
   font-size: 25px;
 }
