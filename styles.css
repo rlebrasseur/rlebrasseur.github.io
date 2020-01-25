@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: #F0F0F0;
+}
+
+.banner {
+  background-image: url('IMG_0057.JPG');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-text {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Gelasio', serif;
+}
+.name {
+  font-size: 250%;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  background-color: #101010;
+  border-bottom: 1px solid #303030;
+  font-size: 18px;
+}
+header a {
+  text-decoration: none;
+  color: #696969;
+}
+header a:hover, header a:active {
+  color: #FF69B4;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+nav li {
+  list-style-type: none;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.about-me-container {
+  background-color: #202020;
+  margin: 4%;
+}
+.about-me {
+  position: relative;
+  top: -1em;
+  padding: 0% 5%;
+  width: 95vw;
+  font-size: 25px;
+}
+.about-me h1 {
+  text-align: center;
+  font-size: 200%;
+  color: #696969;
+}
+.about-me p {
+  color: #C0C0C0;
+}
+.goals-container {
+  background-color: #202020;
+  margin: 4%;
+}
+.goals {
+  position: relative;
+  top: -1em;
+  padding: 0% 5% 0% 15%;
+  width: 95vw;
+  font-size: 25px;
+}
+.goals h1 {
+  font-size: 200%;
+  color: pink;
+  color: #696969;
+}
+.goals ul {
+  list-style-position: inside;
+  color: #C0C0C0;
+}
+
+footer {
+  display: flex;
+  height: 5vh;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer p {
+  color: #696969;
+  margin: .5em .5em;
+}
+
+@media only screen and (min-width: 961px) {
+  .both{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 90vh;
+  }
+  .about-me-container {
+    flex: 2;
+    margin: 2.5% 2.5% 2.5% 5%;
+  }
+  .about-me {
+    width: auto;
+  }
+  .goals-container {
+    flex: 1;
+    margin: 2.5% 5% 2.5% 2.5%;
+  }
+  .goals {
+    width: auto;
+  }
+}
